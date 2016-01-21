@@ -40,5 +40,31 @@ function create_custom_post_types(){
 						)
 
 	);
+
+	register_post_type('services', 
+						array(
+							'labels'=> array(
+										'name'=> _('Services'),
+										'singular_name' => _('Service')
+										
+					   		),
+						'public'=>true,
+						'has_archive'=> true,
+						'rewrite'=>array('slug'=>'services'),
+						)
+
+	);
 }
 add_action('init', 'create_custom_post_types');
+
+register_sidebar(array(
+	'name'=>__('Homepage sidebar', 'homepage-sidebar'),
+	'id' => 'sidebar-2',
+	'description' => __('Appears on the static front page template',
+		'homepage-sidebar'),
+	'before_widget'=> '<aside id="%1$s" class="widget %2$s">',
+	'after_widget' => '</aside>',
+	'before_title' => '<h4 class="widget-title">',
+	'after_title' => '</h3>',
+
+	)	);

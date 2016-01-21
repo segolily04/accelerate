@@ -31,6 +31,7 @@ li.individual-featured-work {
 
 .button {
     background: none repeat scroll 0 0 #45ac9d;
+    text-align: center;
 }
 
 #masthead nav ul li{
@@ -42,9 +43,10 @@ li.individual-featured-work {
 /* blog post on homepage*/
 .blog-post{
 	width: 50%;
+	float: left;
 }
 
-.blog-post h4{
+.blog-twitter-feed h4{
 	font-size: 16px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
@@ -130,4 +132,165 @@ div.case-study-archive-images img{
 	display: block;
 	margin-bottom: 50px;
 	border: 1px solid #dddddd;
+}
+
+/*Ninja-Form Contact Page*/
+
+div.contact-main-form {
+	width: 70%;
+	height: auto;
+	margin-left: 15%;
+}
+
+div.contact-main-form > div {
+	display: inline-block;
+	width: 95%;
+	font-size: 95%;
+}
+
+div.contact-main-form > div #ninja_forms_field_1_div_wrap{
+	float: left;
+	width: 48%;
+}
+
+div.contact-main-form > div #ninja_forms_field_2_div_wrap{
+	float: right;
+	width: 48%;
+}
+
+div.contact-main-form > div #ninja_forms_field_3_div_wrap{
+	float: left;
+	width: 100%;
+}
+
+#ninja_forms_field_1_label{
+	font-weight: normal;
+}
+
+#ninja_forms_field_2_label{
+	font-weight: normal;
+}
+
+#ninja_forms_field_3_label{
+	font-weight: normal;
+}
+
+div.contact-main-form > div #ninja_forms_field_5_div_wrap{
+	float: left;
+	width: 100%;
+}
+
+#ninja_forms_field_5 {
+	float: right;
+	width: 30%;
+	height: 50px;
+	background: #45ac9d; 
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/*About Page styling*/
+.about-page-content{
+	color: #ffffff;
+	text-align:center;
+	color: white;
+    font-family: "open sans";
+    font-size: 200%;
+    padding-top: 10%;
+}
+
+/*About page formatting*/
+.services {
+	text-align: left;
+}
+
+.right {
+	float: right; 
+	padding-top: 2%;
+
+}
+
+.left {
+	float: left; 
+	padding-right: 2%;
+	padding-top: 2%;
+}
+
+
+.services-content{
+	display: inline-block;
+	width: 65%;
+	margin: 0;
+}
+
+.featured-services {
+	border-bottom: 1px dotted #e3e1e1; 	
+}
+
+.ctct-btn{
+	display: inline-block;
+	height: 20px;
+	line-height: 22px;
+}
+
+li.contact-align {
+	display: inline-block;
+	padding-left: 10%;
+	padding-top: 2%;
+}
+
+.widget_search {
+	border-bottom: 1px solid #BFBFBF;
+}
+.widget_search input[type="text"] {
+	border-top: 1px solid #a6a6a6;
+	border-bottom: 1px solid #a6a6a6;
+	border-left: 1px solid #a6a6a6;
+	border-right: none;
+	width: 200px;
+	height: 36px;
+	padding: 8px;
+	vertical-align: middle;
+}
+.widget_search input[type="submit"] {
+	border-top: 1px solid #a6a6a6;
+	border-bottom: 1px solid #a6a6a6;
+	border-right: 1px solid #a6a6a6;
+	border-left: none;
+	width: 35px;
+	height: 36px;
+	background: url('img/white-arrow-right.png') no-repeat 13px 10px #45ac9d;
+	color: #ffffff;
+	margin-left: -5px;
+	vertical-align: middle;
+}
+
+.twitter-sidebar {
+	width: 50%;
+	float: right;
+}
+
+.blog-twitter-feed {
+	display: inline-block;
+}
+
+ul.tweets {
+	list-style-type: none;
+}
+
+ul.tweets > li a {
+	color: #45ac9d;
+	display: inline-block;
+}
+
+ul.tweets > li {
+	font-size: 16px;
+    font-family: "open sans";
+	font-weight: normal;
+	color: #000000;
+}
+
+.newsletter-button {
+	background: #45ac9d;
+	color: #ffffff;
 }
